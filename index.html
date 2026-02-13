@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day, Sadiya Rahman Tisha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffe6f0, #ffb3ba, #ffffff);
+            color: #333;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Animated Background */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .heart, .petal {
+            position: absolute;
+            animation: float 10s infinite linear;
+        }
+
+        .heart {
+            color: #ff6b9d;
+            font-size: 2rem;
+        }
+
+        .petal {
+            color: #ffb3ba;
+            font-size: 1.5rem;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #ff6b9d;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #e63946;
+        }
+
+        /* Sections */
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Headings */
+        h1, h2 {
+            font-family: 'Dancing Script', cursive;
+            color: #e63946;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 800px;
+        }
+
+        /* Buttons */
+        .btn {
+            background: linear-gradient(135deg, #ff6b9d, #ffb3ba);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 107, 157, 0.3);
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(255, 107, 157, 0.5);
+        }
+
+        /* Love Story Cards */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 1.5rem;
+            width: 300px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            animation: slideIn 0.5s ease-out;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card.highlighted {
+            background: linear-gradient(135deg, #ff6b9d, #ffb3ba);
+            color: white;
+            font-weight: bold;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        /* Countdown */
+        #countdown {
+            font-size: 2rem;
+            color: #e63946;
+            margin-top: 1rem;
+        }
+
+        /* Music Controls */
+        #music-controls {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 100;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 1rem;
+            text-align: center;
+            font-size: 1rem;
+            color: #ff6b9d;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 2rem; }
+            .card { width: 100%; }
+            nav a { display: block; margin: 0.5rem 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="heart" style="left: 10%; animation-delay: 0s;">❤️</div>
+        <div class="petal" style="left: 20%; animation-delay: 1s;">🌹</div>
+        <div class="heart" style="left: 30%; animation-delay: 2s;">❤️</div>
+        <div class="petal" style="left: 40%; animation-delay: 3s;">🌹</div>
+        <div class="heart" style="left: 50%; animation-delay: 4s;">❤️</div>
+        <div class="petal" style="left: 60%; animation-delay: 5s;">🌹</div>
+        <div class="heart" style="left: 70%; animation-delay: 6s;">❤️</div>
+        <div class="petal" style="left: 80%; animation-delay: 7s;">🌹</div>
+        <div class="heart" style="left: 90%; animation-delay: 8s;">❤️</div>
+        <!-- Add more as needed for density -->
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#story">Our Love Story</a>
+        <a href="#reasons">Reasons I Love You</a>
+        <a href="#forever">Forever With You</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Happy Valentine’s Day, My Love Sadiya Rahman Tisha ❤️</h1>
+        <p>You are my today, my tomorrow, and my forever.</p>
+        <div id="countdown"></div>
+    </section>
+
+    <!-- Our Love Story Section -->
+    <section id="story">
+        <h2>Our Love Story</h2>
+        <p>From the very first moment our paths crossed, something felt different.<br>
+        It wasn’t just a meeting — it was destiny quietly writing the first chapter of our forever.</p>
+        <p>Sadiya Rahman Tisha, you came into my life like a soft sunrise, bringing warmth, peace, and happiness I never knew I was missing. Every conversation became special, every smile became unforgettable, and every day with you became my favorite day.</p>
+        <p>What started as simple moments turned into a beautiful love story — our love story — filled with laughter, care, trust, and endless affection. And this is only the beginning of our forever. ❤️</p>
+    </section>
+
+    <!-- Reasons Why I Love You Section -->
+    <section id="reasons">
+        <h2>Reasons Why I Love You</h2>
+        <div class="cards">
+            <div class="card">I love your beautiful smile that brightens my darkest days.</div>
+            <div class="card">I love your kind heart and the way you care for everyone.</div>
+            <div class="card">I love how you understand me without even saying a word.</div>
+            <div class="card">I love your laugh — it’s my favorite sound in the world.</div>
+            <div class="card">I love your strength, your dreams, and your determination.</div>
+            <div class="card">I love the way you make ordinary moments feel magical.</div>
+            <div class="card">I love you not just for who you are, but for who I become when I’m with you.</div>
+            <div class="card highlighted">I love you simply because you are you 💕</div>
+        </div>
+    </section>
+
+    <!-- Forever With You Section -->
+    <section id="forever">
+        <h2>Forever With You</h2>
+        <p>I promise to stand beside you in every season of life.<br>
+        I promise to support your dreams and hold your hand through every challenge.<br>
+        I promise to protect your heart the way you protect mine.<br>
+        I promise to choose you — every single day.</p>
+        <p>No matter what happens, no matter where life takes us, my heart belongs to you — today, tomorrow, and forever. 🌹</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        Made with endless love for Sadiya 💕
+    </footer>
+
+    <!-- Music Controls -->
+    <div id="music-controls">
+        <button class="btn" id="play-pause">Play Music</button>
+    </div>
+
+    <!-- Audio Element (Use a free romantic track, e.g., from freesound.org or a placeholder) -->
+    <audio id="bg-music" loop>
+        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav"> <!-- Placeholder; replace with a romantic track like a soft piano or love song -->
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Smooth Scrolling
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const nextValentine = new Date(now.getFullYear() + 1, 1, 14); // Feb 14 next year
+            if (now > new Date(now.getFullYear(), 1, 14)) {
+                nextValentine.setFullYear(now.getFullYear() + 1);
+            }
+            const diff = nextValentine - now;
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            document.getElementById('countdown').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s until next Valentine's Day`;
+        }
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Music Play/Pause
+        const audio = document.getElementById('bg-music');
+        const playPauseBtn = document.getElementById('play-pause');
+        playPauseBtn.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                playPauseBtn.textContent = 'Pause Music';
+            } else {
+                audio.pause();
+                playPauseBtn.textContent = 'Play Music';
+            }
+        });
+    </script>
+</body>
+</html>
